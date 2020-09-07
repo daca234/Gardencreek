@@ -156,9 +156,6 @@ header.masthead {
 .features-icons-icon{
     font-size:60px;
     color: $bordo;
-    &:hover{
-    font-size:3.5rem;
-    }
 }
 .showcase .showcase-text {
     padding: 3rem;
@@ -182,10 +179,10 @@ background-size: cover;
 .testimonials .testimonial-item img {
     max-width: 12rem;
     box-shadow: 0px 5px 5px 0px #adb5bd;
-  }
-
-
-
+}
+.sign{
+    color:#fff !important ;
+}
 
 @media screen and (max-width: 992px){
     .title-h1{
