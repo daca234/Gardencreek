@@ -8,7 +8,6 @@ $pozadina:#fcfafa;
   padding: 0px;
   scroll-behavior: smooth;
 }
-
 body {
   font-family: 'Poppins', sans-serif;
 }
@@ -111,9 +110,6 @@ button .link{
 /*.img-container img{
     height: 400px;
 }*/
-.three{
-    background-color: $pozadina;
-}
 .column img{
     filter: grayscale(1) brightness(0.5);
     border-radius: 5px;
@@ -216,14 +212,41 @@ background-size: cover;
     .testimonials .testimonial-item img {
         max-width: 16rem;
     }
+    .crno{
+        height: auto;
+    }
 }
 
 
 
 
 
-
-
+.crno img{
+    background-color: black;
+    height: 400px;
+}
+.roze{
+    background-color: $svetlija;
+    height: 500px;
+}
+.brand-logo{
+    padding:10px;
+    margin:5px;
+    img{
+        width: 300px;
+    }
+}
+.nav-bar-m{
+    background-color: $pozadina;
+}
+.nav-wrapper{
+    color:$bordo;
+}
+.portfolio{
+    color:$bordo;
+    font-style: italic;
+    text-decoration:underline;
+}
 
 
 /*

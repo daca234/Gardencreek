@@ -130,10 +130,6 @@ button .link {
 /*.img-container img{
     height: 400px;
 }*/
-.three {
-  background-color: #fcfafa;
-}
-
 .column img {
   -webkit-filter: grayscale(1) brightness(0.5);
           filter: grayscale(1) brightness(0.5);
@@ -253,6 +249,42 @@ header.masthead h1 {
   .testimonials .testimonial-item img {
     max-width: 16rem;
   }
+  .crno {
+    height: auto;
+  }
+}
+
+.crno img {
+  background-color: black;
+  height: 400px;
+}
+
+.roze {
+  background-color: #bb927e;
+  height: 500px;
+}
+
+.brand-logo {
+  padding: 10px;
+  margin: 5px;
+}
+
+.brand-logo img {
+  width: 300px;
+}
+
+.nav-bar-m {
+  background-color: #fcfafa;
+}
+
+.nav-wrapper {
+  color: #613722;
+}
+
+.portfolio {
+  color: #613722;
+  font-style: italic;
+  text-decoration: underline;
 }
 
 /*
