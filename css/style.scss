@@ -8,6 +8,9 @@ $pozadina:#fcfafa;
   padding: 0px;
   scroll-behavior: smooth;
 }
+:root {
+    font-size: 16px;
+}
 body {
   font-family: 'Poppins', sans-serif;
 }
@@ -220,34 +223,84 @@ background-size: cover;
 
 
 
-
+.valign-wrapper {
+    flex-wrap: wrap;
+}
 .crno img{
     background-color: black;
     height: 400px;
 }
 .roze{
     background-color: $svetlija;
-    height: 500px;
+    
 }
-.brand-logo{
-    padding:10px;
-    margin:5px;
-    img{
-        width: 300px;
+nav {
+    line-height: normal;
+    height: auto;
+    .brand-logo{
+        position: relative;
+        //padding:10px;
+        //margin:5px;
+        img{
+            width: 300px;
+            @media (max-width: 600px) {
+                max-width: 80%;
+            }
+        }
+    }
+    .nav-wrapper{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        color:$bordo;
+        padding: 1rem;
+        width: 100%;
+        ul {
+            a {
+                font-weight: 700;
+                color: $bordo;
+                &:hover {
+                    background-color: transparent;
+                    font-style: italic;
+                    text-decoration: underline;
+                    color: $svetlija;
+                }
+            }
+        }
     }
 }
+
 .nav-bar-m{
     background-color: $pozadina;
 }
-.nav-wrapper{
-    color:$bordo;
+#main {
+    margin: 20px 0;
+    justify-content: space-around;
+    .col {
+        margin: 0;
+    }
+    #text-right {
+        clip-path: polygon(0% 0%, 100% 0, 100% 80%, 50% 100%, 0 80%);
+        padding: 80px 30px 100px 30px;
+    }
 }
 .portfolio{
     color:$bordo;
     font-style: italic;
     text-decoration:underline;
 }
+.mt-30px {
+    margin-top: 30px !important;
+}
+#mat-footer {
+    .row {
+        justify-content: space-between;
+        .col {
+            margin: 0px;
+        }
 
+    }
+}
 
 /*
 article{

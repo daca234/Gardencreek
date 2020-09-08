@@ -6,6 +6,10 @@
   scroll-behavior: smooth;
 }
 
+:root {
+  font-size: 16px;
+}
+
 body {
   font-family: 'Poppins', sans-serif;
 }
@@ -254,6 +258,11 @@ header.masthead h1 {
   }
 }
 
+.valign-wrapper {
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
 .crno img {
   background-color: black;
   height: 400px;
@@ -261,30 +270,92 @@ header.masthead h1 {
 
 .roze {
   background-color: #bb927e;
-  height: 500px;
 }
 
-.brand-logo {
-  padding: 10px;
-  margin: 5px;
+nav {
+  line-height: normal;
+  height: auto;
 }
 
-.brand-logo img {
+nav .brand-logo {
+  position: relative;
+}
+
+nav .brand-logo img {
   width: 300px;
+}
+
+@media (max-width: 600px) {
+  nav .brand-logo img {
+    max-width: 80%;
+  }
+}
+
+nav .nav-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #613722;
+  padding: 1rem;
+  width: 100%;
+}
+
+nav .nav-wrapper ul a {
+  font-weight: 700;
+  color: #613722;
+}
+
+nav .nav-wrapper ul a:hover {
+  background-color: transparent;
+  font-style: italic;
+  text-decoration: underline;
+  color: #bb927e;
 }
 
 .nav-bar-m {
   background-color: #fcfafa;
 }
 
-.nav-wrapper {
-  color: #613722;
+#main {
+  margin: 20px 0;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+#main .col {
+  margin: 0;
+}
+
+#main #text-right {
+  -webkit-clip-path: polygon(0% 0%, 100% 0, 100% 80%, 50% 100%, 0 80%);
+          clip-path: polygon(0% 0%, 100% 0, 100% 80%, 50% 100%, 0 80%);
+  padding: 80px 30px 100px 30px;
 }
 
 .portfolio {
   color: #613722;
   font-style: italic;
   text-decoration: underline;
+}
+
+.mt-30px {
+  margin-top: 30px !important;
+}
+
+#mat-footer .row {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+#mat-footer .row .col {
+  margin: 0px;
 }
 
 /*

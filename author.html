@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
     <link rel="stylesheet" type="text/css" href="css/style.css"/>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous"/>
     <link rel="shortcut icon" href="img/icon.ico" type="image/ico">
     <meta name="description" content="Gardencreek vinery. You are someone to us."/>
@@ -16,30 +17,137 @@
 </head>
 <body>
     <!-- Navbar goes here -->
-    <nav class="navbar navbar-light bg-light p-3">
+    <nav class="navbar navbar-light white p-3">
         <div class="nav-wrapper">
-          <a href="index.html" class="brand-logo"><img src="img/Blogo.png" alt="Brown logo"></a>
+          <a href="index.html" class="brand-logo"><img src="img/Blogo.png" alt="Brown logo" class="responsive-img"></a>
+          <a href="#" data-target="nav-meni" class="sidenav-trigger"><i class="material-icons black-text">menu</i></a>
           <ul class="right hide-on-med-and-down">
             <li><a href="index.html">Home</a></li>
             <li><a href="about.html">About</a></li>
             <li><a href="wine.html">Wine</a></li>
+            <li><a href="author.html">Author</a></li>
           </ul>
         </div>
-      </nav>
-
+     </nav>
+    <ul id="nav-meni" class="sidenav">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="wine.html">Wine</a></li>
+      <li><a href="author.html">Author</a></li>
+    </ul>
     <!-- Page Layout here -->
-    <div class="row valign-wrapper center-align">
+    <div id="main" class="row valign-wrapper center-align">
 
         <div class=" col s12 m12 l4 crno">
           <!-- Black navigation panel -->
           <img class="responsive-img" src="img/danijela.jpg" alt="Danijela-Kupresanin">
         </div>
   
-        <div class=" col s12 m12 l8 roze">
+        <div id="text-right" class=" col s12 m12 l7 roze">
           <!-- Pink page content  -->
-          <p>Hi, my name is Danijela Kuprešanin and I am from Belgrade. I'm 19 and I go to ICT college. I've recently started studying IT, but I have always been interested in it.  You can click on   <a class="portfolio"href="https://daca234.github.io/portfolio/"> portfolio   </a> to know about me more.</p>
+          <p>Hi, my name is Danijela Kuprešanin and I am from Belgrade. I'm 19 and I go to ICT college. I've recently started studying IT, but I have always been interested in it.  You can click on   <a class="portfolio" href="https://daca234.github.io/portfolio/"> portfolio   </a> to know about me more.</p>
         </div>
   
       </div>
+      <footer id="mat-footer">
+
+        <div class="container">
+      
+          <!-- Grid row -->
+          <div class="row">
+      
+            <!-- Grid column -->
+            <div class="col s12 l3 center-align mt-30px">
+      
+              <!-- Content -->
+              <h5 class="">You are someone to us</h5>
+              <p class="">What once was a small family bussines grew to be biggest wine suppilier in Tuscany.</p>
+              <p class="hide-on-large-only">You can contact us with the links on the right and find all our social media. Our community is growing every day, be part of it.</p>
+      
+            </div>
+      
+            <!-- Grid column -->
+            <div class="col s12 l3 center-align mt-30px">
+      
+              <!-- Links -->
+              <h5>Links</h5>
+      
+              <ul>
+                <li>
+                  <p>
+                    <a href="#!" target="_blank">css</a>
+                  </p>
+                </li>
+                <li>
+                  <p>
+                    <a href="#!"target="_blank">sitemap</a>
+                  </p>
+                </li>
+                <li>
+                  <p>
+                    <a href="#!"target="_blank">sass</a>
+                  </p>
+                </li>
+              </ul>
+      
+            </div>
+      
+            <!-- Grid column -->
+            <div class="col s12 l3 center-align mt-30px">
+      
+              <!-- Contact details -->
+              <h5>Address</h5>
+      
+              <ul>
+                <li>
+                  <p>
+                    <i class="fas fa-home"></i> <a href="https://www.google.com/maps/place/%D0%92%D0%B8%D1%81%D0%BE%D0%BA%D0%B0+%D0%98%D0%A6%D0%A2+%D1%88%D0%BA%D0%BE%D0%BB%D0%B0/@44.8146247,20.48388,15z/data=!4m2!3m1!1s0x0:0xc17ed71f59ac4725?sa=X&ved=2ahUKEwjggsjPoaPrAhUGJBoKHYdPDIQQ_BIwDXoECA4QCA" target="_blank">Tuscany, ITA 10012  </a></p>
+                </li>
+                <li>
+                  <p>
+                    <i class="fas fa-envelope"></i> <a href="mailto:info@ict.edu.rs">info@ict.edu.rs</a></p>
+                </li>
+                <li>
+                  <p>
+                    <i class="fas fa-phone"></i> <tel>+ 01 234 567 88</tel></p>
+                </li>
+              </ul>
+      
+            </div>
+      
+            <!-- Grid column -->
+            <div class="col s12 l3 center-align mt-30px">
+      
+              <!-- Social buttons -->
+              <h5>Follow Us</h5>
+              <ul class="soc ">
+              <li type="button" class="btn-floating btn-fb">
+                <i class="fab fa-facebook-f"></i>
+              </li>
+              <li type="button" class="btn-floating btn-tw">
+                <i class="fab fa-linkedin"><a href="https://www.linkedin.com/in/danijela-kupre%C5%A1anin-b985a01b6/" target="_blank"></a></i>
+              </li>
+              <li type="button" class="btn-floating btn-ig">
+                <i class="fab fa-instagram"></i>
+              </li>
+            </ul>
+            </div>
+            <!-- Grid column -->
+      
+          </div>
+          <!-- Grid row -->
+      
+        </div>
+        <div class="footer-copyright center-align mt-30px">© 2020 Copyright:
+          <a href="https://daca234.github.io/portfolio/" target="_blank"> Danijela Kuprešanin 107/19</a>
+        </div>
+      </footer>
+      <script src="js/materialize.min.js"></script>
+      <script>
+        document.addEventListener('DOMContentLoaded', function() {
+        var elems = document.querySelectorAll('.sidenav');
+        var instances = M.Sidenav.init(elems);
+       });
+      </script>
 </body>
 </html>
