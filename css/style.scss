@@ -95,7 +95,7 @@ button .link{
     color: #fff;
 }
 .picture{
-    background-image: url("../img/vinoo.jpg");
+    background-image: url("../img/wine.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: top;
@@ -109,7 +109,23 @@ button .link{
     transform: rotate(-14deg);
     color: $svetlija;
 }
-
+.color-name-red{
+    color: #d82e2e;
+    &:hover{color: #990000;
+    }
+}
+.color-name-white{
+    color:#84b960;
+    &:hover{
+        color: #6A9A4A;
+    }
+}
+.color-name-rose{
+    color:#E17474;
+    &:hover{
+        color: #944F4F;
+    }
+}
 
 
 header.masthead {
@@ -151,13 +167,13 @@ min-height: 30rem;
 background-size: cover;
 }
 .first-pic{
-    background-image: url("../img/winejards.jpg");
+    background-image: url("../img/wineyards.jpg");
 }
 .second-pic{
-    background-image: url("../img/krozsljivike.jpg");
+    background-image: url("../img/vine.jpg");
 }
 .third-pic{
-    background-image: url("../img/ilivade.jpg");
+    background-image: url("../img/winefield.jpg");
 }
 .creators{
     background-color: $pozadina;

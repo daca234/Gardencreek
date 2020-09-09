@@ -112,7 +112,7 @@ button .link {
 }
 
 .picture {
-  background-image: url("../img/vinoo.jpg");
+  background-image: url("../img/wine.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: top;
@@ -128,6 +128,30 @@ button .link {
   -webkit-transform: rotate(-14deg);
           transform: rotate(-14deg);
   color: #bb927e;
+}
+
+.color-name-red {
+  color: #d82e2e;
+}
+
+.color-name-red:hover {
+  color: #990000;
+}
+
+.color-name-white {
+  color: #84b960;
+}
+
+.color-name-white:hover {
+  color: #6A9A4A;
+}
+
+.color-name-rose {
+  color: #E17474;
+}
+
+.color-name-rose:hover {
+  color: #944F4F;
 }
 
 header.masthead {
@@ -175,15 +199,15 @@ header.masthead h1 {
 }
 
 .first-pic {
-  background-image: url("../img/winejards.jpg");
+  background-image: url("../img/wineyards.jpg");
 }
 
 .second-pic {
-  background-image: url("../img/krozsljivike.jpg");
+  background-image: url("../img/vine.jpg");
 }
 
 .third-pic {
-  background-image: url("../img/ilivade.jpg");
+  background-image: url("../img/winefield.jpg");
 }
 
 .creators {
