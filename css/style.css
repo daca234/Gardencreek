@@ -199,96 +199,101 @@ header.masthead h1 {
   background-image: url("../img/ilivade.jpg");
 }
 
-.creators {
+.third-pic .creators {
   background-color: #fcfafa;
 }
 
-.creators .creator-item img {
+.third-pic .creators .creator-item img {
   max-width: 12rem;
   -webkit-box-shadow: 0px 5px 5px 0px #adb5bd;
           box-shadow: 0px 5px 5px 0px #adb5bd;
 }
 
-.sign {
+.third-pic .sign {
   color: #fff !important;
 }
 
 @media screen and (max-width: 992px) {
-  .title-h1 {
+  .third-pic .title-h1 {
     -webkit-transform: rotate(0deg);
             transform: rotate(0deg);
     color: #613722;
   }
-  .features-icons-item {
+  .third-pic .features-icons-item {
     padding-top: 0px;
     margin-top: 0px;
   }
-  .creators .creator-item img {
+  .third-pic .creators .creator-item img {
     max-width: 20rem;
   }
 }
 
 @media screen and (max-width: 768px) {
-  .column img {
+  .third-pic .column img {
     -webkit-filter: grayscale(0) brightness(1);
             filter: grayscale(0) brightness(1);
   }
-  header.masthead {
+  .third-pic header.masthead {
     padding-top: 15px;
     padding-bottom: 15px;
   }
-  header.masthead h1 {
-    font-size: 10px;
+  .third-pic header.masthead h1 {
+    font-size: 40px;
+  }
+  .third-pic .title-h1 {
+    color: #613722;
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
   }
 }
 
 @media screen and (max-width: 576px) {
-  .title-h1 {
+  .third-pic .title-h1 {
     margin-left: -15px;
     font-size: 65px;
   }
-  .testimonials .testimonial-item img {
+  .third-pic .testimonials .testimonial-item img {
     max-width: 20px;
   }
-  .crno {
+  .third-pic .crno {
     height: auto;
   }
 }
 
-.valign-wrapper {
+.third-pic .valign-wrapper {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
 }
 
-.crno img {
+.third-pic .crno img {
   background-color: black;
   height: 400px;
 }
 
-.roze {
+.third-pic .roze {
   background-color: #bb927e;
 }
 
-nav {
+.third-pic nav {
   line-height: normal;
   height: auto;
 }
 
-nav .brand-logo {
+.third-pic nav .brand-logo {
   position: relative;
 }
 
-nav .brand-logo img {
+.third-pic nav .brand-logo img {
   width: 300px;
 }
 
 @media (max-width: 600px) {
-  nav .brand-logo img {
+  .third-pic nav .brand-logo img {
     max-width: 80%;
   }
 }
 
-nav .nav-wrapper {
+.third-pic nav .nav-wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -303,55 +308,55 @@ nav .nav-wrapper {
   width: 100%;
 }
 
-nav .nav-wrapper ul a {
+.third-pic nav .nav-wrapper ul a {
   font-weight: 700;
   color: #613722;
 }
 
-nav .nav-wrapper ul a:hover {
+.third-pic nav .nav-wrapper ul a:hover {
   background-color: transparent;
   font-style: italic;
   text-decoration: underline;
   color: #bb927e;
 }
 
-.nav-bar-m {
+.third-pic .nav-bar-m {
   background-color: #fcfafa;
 }
 
-#main {
+.third-pic #main {
   margin: 20px 0;
   -ms-flex-pack: distribute;
       justify-content: space-around;
 }
 
-#main .col {
+.third-pic #main .col {
   margin: 0;
 }
 
-#main #text-right {
+.third-pic #main #text-right {
   -webkit-clip-path: polygon(0% 0%, 100% 0, 100% 80%, 50% 100%, 0 80%);
           clip-path: polygon(0% 0%, 100% 0, 100% 80%, 50% 100%, 0 80%);
   padding: 80px 30px 100px 30px;
 }
 
-.portfolio {
+.third-pic .portfolio {
   color: #613722;
   font-style: italic;
   text-decoration: underline;
 }
 
-.mt-30px {
+.third-pic .mt-30px {
   margin-top: 30px !important;
 }
 
-#mat-footer .row {
+.third-pic #mat-footer .row {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
 }
 
-#mat-footer .row .col {
+.third-pic #mat-footer .row .col {
   margin: 0px;
 }
 /*# sourceMappingURL=style.css.map */
