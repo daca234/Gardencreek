@@ -109,15 +109,6 @@ button .link{
     transform: rotate(-14deg);
     color: $svetlija;
 }
-.column img{
-    filter: grayscale(1) brightness(0.5);
-    border-radius: 5px;
-    transition: 0.3s linear;
-    &:hover{
-        filter: grayscale(0);
-    }
-}
-
 
 
 
@@ -127,7 +118,7 @@ header.masthead {
     background-size: cover;
     padding-top: 8rem;
     padding-bottom: 8rem;
-  }
+    }
   
   header.masthead .overlay {
     background-color: #212529;
@@ -164,9 +155,10 @@ background-size: cover;
 }
 .second-pic{
     background-image: url("../img/krozsljivike.jpg");
-}.third-pic{
+}
+.third-pic{
     background-image: url("../img/ilivade.jpg");
-
+}
 .creators{
     background-color: $pozadina;
     .creator-item img {
@@ -178,19 +170,7 @@ background-size: cover;
     color:#fff !important ;
 }
 
-@media screen and (max-width: 992px){
-    .title-h1{
-        transform: rotate(0deg);
-        color: $bordo;
-    }
-    .features-icons-item{
-        padding-top:0px;
-        margin-top:0px;
-    }
-    .creators .creator-item img {
-        max-width: 20rem;
-    }
-}
+
 @media screen and (max-width: 768px) {
     .column img {
         filter: grayscale(0) brightness(1);
@@ -202,11 +182,7 @@ background-size: cover;
       header.masthead h1 {
         font-size: 40px;
       }
-      .title-h1{
-        color:$bordo;
-       -webkit-transform: rotate(0deg); 
-       transform: rotate(0deg); 
-      }
+     
 }
 @media screen and (max-width:576px){
     .title-h1{
@@ -238,7 +214,15 @@ background-size: cover;
 nav {
     line-height: normal;
     height: auto;
-    .brand-logo{
+    
+    .nav-wrapper{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        color:$bordo;
+        padding: 1rem;
+        width: 100%;
+        .brand-logo{
         position: relative;
         //padding:10px;
         //margin:5px;
@@ -249,14 +233,7 @@ nav {
             }
         }
     }
-    .nav-wrapper{
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        color:$bordo;
-        padding: 1rem;
-        width: 100%;
-        ul {
+    ul {
             a {
                 font-weight: 700;
                 color: $bordo;
@@ -303,4 +280,19 @@ nav {
     }
 }
 
+
+@media screen and (max-width:992px) { 
+    .title-h1{
+        transform: rotate(0deg)!important; 
+        -webkit-transform: rotate(0deg)!important; 
+        color: $bordo;
+        
+    }
+    .features-icons-item{
+        padding-top:0px;
+        margin-top:0px;
+    }
+    .creators .creator-item img {
+        max-width: 20rem;
+    }
 }

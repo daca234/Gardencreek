@@ -130,19 +130,6 @@ button .link {
   color: #bb927e;
 }
 
-.column img {
-  -webkit-filter: grayscale(1) brightness(0.5);
-          filter: grayscale(1) brightness(0.5);
-  border-radius: 5px;
-  -webkit-transition: 0.3s linear;
-  transition: 0.3s linear;
-}
-
-.column img:hover {
-  -webkit-filter: grayscale(0);
-          filter: grayscale(0);
-}
-
 header.masthead {
   background-color: #343a40;
   background: url("../img/slider.jpg") no-repeat center;
@@ -199,101 +186,67 @@ header.masthead h1 {
   background-image: url("../img/ilivade.jpg");
 }
 
-.third-pic .creators {
+.creators {
   background-color: #fcfafa;
 }
 
-.third-pic .creators .creator-item img {
+.creators .creator-item img {
   max-width: 12rem;
   -webkit-box-shadow: 0px 5px 5px 0px #adb5bd;
           box-shadow: 0px 5px 5px 0px #adb5bd;
 }
 
-.third-pic .sign {
+.sign {
   color: #fff !important;
 }
 
-@media screen and (max-width: 992px) {
-  .third-pic .title-h1 {
-    -webkit-transform: rotate(0deg);
-            transform: rotate(0deg);
-    color: #613722;
-  }
-  .third-pic .features-icons-item {
-    padding-top: 0px;
-    margin-top: 0px;
-  }
-  .third-pic .creators .creator-item img {
-    max-width: 20rem;
-  }
-}
-
 @media screen and (max-width: 768px) {
-  .third-pic .column img {
+  .column img {
     -webkit-filter: grayscale(0) brightness(1);
             filter: grayscale(0) brightness(1);
   }
-  .third-pic header.masthead {
+  header.masthead {
     padding-top: 15px;
     padding-bottom: 15px;
   }
-  .third-pic header.masthead h1 {
+  header.masthead h1 {
     font-size: 40px;
-  }
-  .third-pic .title-h1 {
-    color: #613722;
-    -webkit-transform: rotate(0deg);
-    transform: rotate(0deg);
   }
 }
 
 @media screen and (max-width: 576px) {
-  .third-pic .title-h1 {
+  .title-h1 {
     margin-left: -15px;
     font-size: 65px;
   }
-  .third-pic .testimonials .testimonial-item img {
+  .testimonials .testimonial-item img {
     max-width: 20px;
   }
-  .third-pic .crno {
+  .crno {
     height: auto;
   }
 }
 
-.third-pic .valign-wrapper {
+.valign-wrapper {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
 }
 
-.third-pic .crno img {
+.crno img {
   background-color: black;
   height: 400px;
 }
 
-.third-pic .roze {
+.roze {
   background-color: #bb927e;
 }
 
-.third-pic nav {
+nav {
   line-height: normal;
   height: auto;
 }
 
-.third-pic nav .brand-logo {
-  position: relative;
-}
-
-.third-pic nav .brand-logo img {
-  width: 300px;
-}
-
-@media (max-width: 600px) {
-  .third-pic nav .brand-logo img {
-    max-width: 80%;
-  }
-}
-
-.third-pic nav .nav-wrapper {
+nav .nav-wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -308,55 +261,84 @@ header.masthead h1 {
   width: 100%;
 }
 
-.third-pic nav .nav-wrapper ul a {
+nav .nav-wrapper .brand-logo {
+  position: relative;
+}
+
+nav .nav-wrapper .brand-logo img {
+  width: 300px;
+}
+
+@media (max-width: 600px) {
+  nav .nav-wrapper .brand-logo img {
+    max-width: 80%;
+  }
+}
+
+nav .nav-wrapper ul a {
   font-weight: 700;
   color: #613722;
 }
 
-.third-pic nav .nav-wrapper ul a:hover {
+nav .nav-wrapper ul a:hover {
   background-color: transparent;
   font-style: italic;
   text-decoration: underline;
   color: #bb927e;
 }
 
-.third-pic .nav-bar-m {
+.nav-bar-m {
   background-color: #fcfafa;
 }
 
-.third-pic #main {
+#main {
   margin: 20px 0;
   -ms-flex-pack: distribute;
       justify-content: space-around;
 }
 
-.third-pic #main .col {
+#main .col {
   margin: 0;
 }
 
-.third-pic #main #text-right {
+#main #text-right {
   -webkit-clip-path: polygon(0% 0%, 100% 0, 100% 80%, 50% 100%, 0 80%);
           clip-path: polygon(0% 0%, 100% 0, 100% 80%, 50% 100%, 0 80%);
   padding: 80px 30px 100px 30px;
 }
 
-.third-pic .portfolio {
+.portfolio {
   color: #613722;
   font-style: italic;
   text-decoration: underline;
 }
 
-.third-pic .mt-30px {
+.mt-30px {
   margin-top: 30px !important;
 }
 
-.third-pic #mat-footer .row {
+#mat-footer .row {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
 }
 
-.third-pic #mat-footer .row .col {
+#mat-footer .row .col {
   margin: 0px;
+}
+
+@media screen and (max-width: 992px) {
+  .title-h1 {
+    transform: rotate(0deg) !important;
+    -webkit-transform: rotate(0deg) !important;
+    color: #613722;
+  }
+  .features-icons-item {
+    padding-top: 0px;
+    margin-top: 0px;
+  }
+  .creators .creator-item img {
+    max-width: 20rem;
+  }
 }
 /*# sourceMappingURL=style.css.map */
