@@ -16,8 +16,7 @@
     <meta name="author" content="Danijela Kuprešanin"/>
 </head>
 <body>
-    <!-- Navbar goes here -->
-    <nav class="navbar navbar-light white p-3">
+    <nav class="navbar navbar-light white ">
         <div class="nav-wrapper">
           <a href="index.html" class="brand-logo"><img src="img/Blogo.png" alt="Brown logo" class="responsive-img"></a>
           <a href="#" data-target="nav-meni" class="sidenav-trigger"><i class="material-icons black-text">menu</i></a>
@@ -35,22 +34,65 @@
       <li><a href="wine.html">Wine</a></li>
       <li><a href="author.html">Author</a></li>
     </ul>
-    <!-- Page Layout here -->
     <div id="main" class="row valign-wrapper center-align">
-
-        <div class=" col s12 m12 l4 crno">
-          <!-- Black navigation panel -->
+        <div class=" col s12 m12 l4 picture-author">
           <img class="responsive-img" src="img/danijela.jpg" alt="Danijela-Kupresanin">
         </div>
-  
-        <div id="text-right" class=" col s12 m12 l7 roze">
-          <!-- Pink page content  -->
-          <p>Hi, my name is Danijela Kuprešanin and I am from Belgrade. I'm 19 and I go to ICT college. I've recently started studying IT, but I have always been interested in it.  You can click on   <a class="portfolio" href="https://daca234.github.io/portfolio/"> portfolio   </a> to know about me more.</p>
+        <div class=" col s12 m12 l7">
+          <h1>About me</h1>
+          <p id="text-right" class="paragraph-left">Hi, my name is Danijela Kuprešanin and I am from Belgrade. I'm 19 and I go to ICT college. I've recently started studying IT, but I have always been interested in it.  You can click on   <a class="portfolio" href="https://daca234.github.io/portfolio/"> portfolio</a> to know about me more.</p>
         </div>
-  
-      </div>
-      <footer id="mat-footer">
+    </div>
+    <h5 class="center-align">Contact me</h5>
+    <div id="mat-form" class="row">
+      <form class="col s10 l8">
+        <div class="row">
+          <div class="input-field col s6">
+            <input id="first_name" type="text" class="validate">
+            <label for="first_name">First Name</label>
+          </div>
+          <div class="input-field col s6">
+            <input id="last_name" type="text" class="validate">
+            <label for="last_name">Last Name</label>
+          </div>
+        </div>
+        <div class="row">
+          <div class="input-field col s12">
+            <input id="subject" type="text" class="validate">
+            <label for="subject">Subject</label>
+          </div>
+        </div>
+        <div class="row">
+          <div class="input-field col s12">
+            <input id="email" type="email" class="validate">
+            <label for="email">Email</label>
+          </div>
+        </div>
+        <div class="row">
+          <div class="input-field col s12">
+            <textarea class="materialize-textarea" id="message"></textarea>
+            <label for="message">Your message</label>
+          </div>
+        </div>
+        <div class="center-align">
+          <button type="button" class="btn waves-effect button modal-trigger" href="#send">Send</button>
+          <button type="reset" class="btn waves-effect button">Reset</button>
+        </div>
+      </form>
+  </div>
+  <!-- materialize modal -->
+  <div id="send" class="modal">
+    <div class="modal-content">
+      <h5>Message sent.</h5>
+      <p>You have successfully sent an e-mail.</p>
+    </div>
+    <div class="modal-footer">
+      <a href="#!" class="modal-close waves-effect btn button">Close</a>
+    </div>
+  </div>
 
+
+      <footer id="mat-footer">
         <div class="container ">
       
           <!-- Grid row -->
@@ -153,7 +195,12 @@
         document.addEventListener('DOMContentLoaded', function() {
         var elems = document.querySelectorAll('.sidenav');
         var instances = M.Sidenav.init(elems);
-       });
+        });
+
+        document.addEventListener('DOMContentLoaded', function() {
+        var elems = document.querySelectorAll('.modal');
+        var instances = M.Modal.init(elems);
+        });
       </script>
 </body>
 </html>

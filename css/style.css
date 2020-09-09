@@ -88,6 +88,12 @@ a:hover {
   color: #613722;
 }
 
+.form-control:focus, .form-control:active, .boots-button:focus, .boots-button:active {
+  border-color: #613722;
+  -webkit-box-shadow: 0 0 0 0.2rem rgba(97, 55, 34, 0.25);
+          box-shadow: 0 0 0 0.2rem rgba(97, 55, 34, 0.25);
+}
+
 .buttons1 .btn {
   background-color: #bb927e;
   color: #fcfafa;
@@ -128,6 +134,11 @@ button .link {
   -webkit-transform: rotate(-14deg);
           transform: rotate(-14deg);
   color: #bb927e;
+}
+
+.btn-block:focus {
+  -webkit-box-shadow: none;
+          box-shadow: none;
 }
 
 .color-name-red {
@@ -246,7 +257,7 @@ header.masthead h1 {
   .testimonials .testimonial-item img {
     max-width: 20px;
   }
-  .crno {
+  .picture-author {
     height: auto;
   }
 }
@@ -256,12 +267,16 @@ header.masthead h1 {
       flex-wrap: wrap;
 }
 
-.crno img {
+h1 {
+  font-size: 50px;
+}
+
+.picture-author img {
   background-color: black;
   height: 400px;
 }
 
-.roze {
+.paragraph-left {
   background-color: #bb927e;
 }
 
@@ -316,7 +331,7 @@ nav .nav-wrapper ul a:hover {
 }
 
 #main {
-  margin: 20px 0;
+  margin: 20px 0 100px 0;
   -ms-flex-pack: distribute;
       justify-content: space-around;
 }
@@ -339,6 +354,42 @@ nav .nav-wrapper ul a:hover {
 
 .mt-30px {
   margin-top: 30px !important;
+}
+
+.button {
+  background-color: #bb927e;
+}
+
+.button:hover, .button:focus {
+  background-color: #613722;
+  color: #fff;
+}
+
+#mat-form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#mat-form form {
+  margin: 0px;
+}
+
+#mat-form form input:focus, #mat-form form textarea:focus {
+  border-bottom: 1px solid #613722;
+  -webkit-box-shadow: 0 1px 0 0 #613722;
+          box-shadow: 0 1px 0 0 #613722;
+}
+
+#mat-form form input:focus + label, #mat-form form textarea:focus + label {
+  color: #613722;
+}
+
+#mat-footer {
+  margin-top: 100px;
 }
 
 #mat-footer .row {

@@ -73,7 +73,12 @@ a{
 #about{
     color: $bordo;
 }
-
+.form-control, .boots-button {
+    &:focus, &:active {
+        border-color: $bordo;
+        box-shadow:0 0 0 0.2rem rgba($bordo,.25);
+    }
+}
 .buttons1 .btn{
     background-color: $svetlija;
     color: $pozadina;
@@ -108,6 +113,11 @@ button .link{
     font-size: 75px;
     transform: rotate(-14deg);
     color: $svetlija;
+}
+.btn-block {
+    &:focus {
+        box-shadow: none;
+    }
 }
 .color-name-red{
     color: #d82e2e;
@@ -208,7 +218,7 @@ background-size: cover;
     .testimonials .testimonial-item img {
         max-width: 20px;
     }
-    .crno{
+    .picture-author{
         height: auto;
     }
 }
@@ -219,11 +229,14 @@ background-size: cover;
 .valign-wrapper {
     flex-wrap: wrap;
 }
-.crno img{
+h1 {
+    font-size: 50px;
+}
+.picture-author img{
     background-color: black;
     height: 400px;
 }
-.roze{
+.paragraph-left{
     background-color: $svetlija;
     
 }
@@ -240,8 +253,6 @@ nav {
         width: 100%;
         .brand-logo{
         position: relative;
-        //padding:10px;
-        //margin:5px;
         img{
             width: 300px;
             @media (max-width: 600px) {
@@ -268,7 +279,7 @@ nav {
     background-color: $pozadina;
 }
 #main {
-    margin: 20px 0;
+    margin: 20px 0 100px 0;
     justify-content: space-around;
     .col {
         margin: 0;
@@ -286,7 +297,32 @@ nav {
 .mt-30px {
     margin-top: 30px !important;
 }
+.button {
+    background-color: $svetlija;
+    &:hover, &:focus {
+        background-color: $bordo;
+        color: #fff;
+    }
+    
+}
+#mat-form {
+    display: flex;
+    justify-content: center;
+    form {
+        margin: 0px;
+        input, textarea {
+            &:focus {
+                border-bottom: 1px solid $bordo;
+                box-shadow: 0 1px 0 0 $bordo;
+                & + label {
+                    color: $bordo;
+                }
+            }
+        }
+    }
+}
 #mat-footer {
+    margin-top: 100px;
     .row {
         justify-content: space-between;
         .col {
@@ -295,7 +331,6 @@ nav {
 
     }
 }
-
 
 @media screen and (max-width:992px) { 
     .title-h1{
